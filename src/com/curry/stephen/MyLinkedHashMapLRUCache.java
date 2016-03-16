@@ -6,7 +6,7 @@ import java.util.Map;
 import java.util.Set;
 
 /**
- * Created by Administrator on 2016/3/16 0016.
+ * Created by LingChong on 2016/3/16 0016.
  */
 public class MyLinkedHashMapLRUCache<K, V> {
     private final int MAX_CACHE_SIZE;

@@ -5,7 +5,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * Created by Administrator on 2016/3/16 0016.
+ * Created by LingChong on 2016/3/16 0016.
  */
 public class MyHashMapLRUCache<K, V> {
     private final int MAX_CACHE_SIZE;
@@ -18,5 +18,6 @@ public class MyHashMapLRUCache<K, V> {
         MAX_CACHE_SIZE = maxCacheSize;
         int capability = (int) (MAX_CACHE_SIZE / DEFAULT_LOAD_FACTOR + 1);
         mMap = Collections.synchronizedMap(new HashMap<>(capability, DEFAULT_LOAD_FACTOR));
+
     }
 }

@@ -55,8 +55,8 @@ public class MyLinkedHashMapLRUCache<K, V> {
     @Override
     public String toString() {
         StringBuffer stringBuffer = new StringBuffer();
-        Set<Map.Entry<K, V>> entrySet = mMap.entrySet();
         synchronized (mMap) {
+            Set<Map.Entry<K, V>> entrySet = mMap.entrySet();
             for(Map.Entry<K, V> entry : entrySet) {
                 stringBuffer.append(String.format("Key: %s Value: %s", entry.getKey(), entry.getValue()) + System.getProperty("line.separator"));
             }
